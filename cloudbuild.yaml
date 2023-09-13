@@ -1,6 +1,7 @@
 steps:
 - name: 'gcr.io/$_PROJECT_ID/helm'
   args: 
+    - update
     - install
     - kanban -f postgres.yaml postgres ./postgres
    

@@ -3,7 +3,11 @@ steps:
   args: 
     - upgrade
     - install
-    - kanban -f postgres.yaml 
+    - kanban
+    - -f
+    - kanban-postgres.yaml
+    - postgres
+    - ./postgres
    
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=asia-south1-c'

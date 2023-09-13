@@ -1,6 +1,6 @@
 steps:
 - name: 'gcr.io/$_PROJECT_ID/helm'
-  args: ['--install', 'kanban', '-f', 'kanban-postgres.yaml', 'postgres', './postgres']
+  args: ['--install', 'kanban', 'postgres', './postgres']
    
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=asia-south1-c'
